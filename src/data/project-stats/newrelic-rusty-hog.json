@@ -1,16 +1,16 @@
 {
   "projectFullName": "newrelic/rusty-hog",
   "issues": {
-    "open": 0
+    "open": 3
   },
-  "releases": 9,
+  "releases": 10,
   "latestRelease": {
-    "name": "v1.0.7",
-    "date": "2020-07-23T00:25:45Z"
+    "name": "v1.0.8",
+    "date": "2020-08-11T21:57:41Z"
   },
-  "commits": 132,
-  "lastSixMonthsCommitTotal": 87,
-  "contributors": 11,
+  "commits": 149,
+  "lastSixMonthsCommitTotal": 51,
+  "contributors": 12,
   "pullRequests": {
     "open": 0
   },
@@ -67,6 +67,13 @@
       "contributions": 1
     },
     {
+      "id": 15875402,
+      "login": "alex-hamlin",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/15875402?v=4",
+      "htmlUrl": "https://github.com/alex-hamlin",
+      "contributions": 1
+    },
+    {
       "id": 11640472,
       "login": "nicolasjhampton",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/11640472?v=4",
@@ -92,7 +99,7 @@
       "login": "cutler-scott-newrelic",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/47458753?v=4",
       "htmlUrl": "https://github.com/cutler-scott-newrelic",
-      "contributions": 84
+      "contributions": 97
     }
   ],
   "languages": [

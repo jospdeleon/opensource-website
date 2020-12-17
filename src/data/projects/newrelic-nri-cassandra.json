@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for Apache Cassandra databases",
   "description": "Capture critical performance metrics and inventory reported by Apache Cassandra databases",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

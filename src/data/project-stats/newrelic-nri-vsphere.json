@@ -1,22 +1,36 @@
 {
   "projectFullName": "newrelic/nri-vsphere",
   "issues": {
-    "open": 1
+    "open": 6
   },
-  "releases": 4,
+  "releases": 7,
   "latestRelease": {
-    "name": "v1.0.0",
-    "date": "2020-07-17T15:02:47Z"
+    "name": "v1.2.0",
+    "date": "2020-11-26T15:43:51Z"
   },
-  "commits": 67,
-  "lastSixMonthsCommitTotal": 67,
-  "contributors": 8,
+  "commits": 88,
+  "lastSixMonthsCommitTotal": 52,
+  "contributors": 10,
   "pullRequests": {
     "open": 1
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 1773616,
+      "login": "theletterf",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
+      "htmlUrl": "https://github.com/theletterf",
+      "contributions": 1
+    },
+    {
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
     {
       "id": 482671,
       "login": "fightingmonk",
@@ -25,18 +39,18 @@
       "contributions": 1
     },
     {
-      "id": 1773616,
-      "login": "theletterf",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
-      "htmlUrl": "https://github.com/theletterf",
-      "contributions": 2
-    },
-    {
       "id": 39911991,
       "login": "davidbrota",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/39911991?v=4",
       "htmlUrl": "https://github.com/davidbrota",
       "contributions": 2
+    },
+    {
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
+      "contributions": 3
     },
     {
       "id": 3230102,
@@ -57,21 +71,21 @@
       "login": "ardias",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
       "htmlUrl": "https://github.com/ardias",
-      "contributions": 6
+      "contributions": 7
     },
     {
       "id": 5143130,
       "login": "gsanchezgavier",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/5143130?v=4",
       "htmlUrl": "https://github.com/gsanchezgavier",
-      "contributions": 20
+      "contributions": 24
     },
     {
       "id": 43335750,
       "login": "paologallinaharbur",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/43335750?v=4",
       "htmlUrl": "https://github.com/paologallinaharbur",
-      "contributions": 27
+      "contributions": 31
     }
   ],
   "languages": [

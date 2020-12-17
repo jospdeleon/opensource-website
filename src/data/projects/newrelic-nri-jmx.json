@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "JMX metrics to New Relic",
   "description": "The New Relic Infrastructure Integration for JMX flexibly monitors any application that exposes metrics via JMX",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

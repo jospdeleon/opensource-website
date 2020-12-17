@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "RabitMQ metrics and inventory to New Relic",
   "description": "Capture critical performance metrics and inventory reported by the RabbitMQ Management plugin",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

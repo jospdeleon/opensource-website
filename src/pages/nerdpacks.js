@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
-import { get } from 'lodash';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageHeading from '../components/PageHeading';
@@ -25,9 +24,6 @@ export const query = graphql`
     }
     sitePage: allSitePage(filter: { path: { eq: $path } }) {
       nodes {
-        fields {
-          contentEditLink
-        }
         componentPath
         path
       }
@@ -35,9 +31,9 @@ export const query = graphql`
   }
 `;
 
-const NerdpackPage = ({ data }) => {
+const NerdpackPage = ({ data, pageContext }) => {
   // console.debug(data);
-  const allProjects = data.allProjects.edges.map(project => {
+  const allProjects = data.allProjects.edges.map((project) => {
     const p = project.node;
     p.title = p.title.startsWith('New Relic One')
       ? p.title.substring('New Relic One'.length)
@@ -45,17 +41,17 @@ const NerdpackPage = ({ data }) => {
     return p;
   });
   const catalogProjects = allProjects.filter(
-    p => p.ossCategory.slug === 'new-relic-one-catalog-project'
+    (p) => p.ossCategory.slug === 'new-relic-one-catalog-project'
   );
   const otherProjects = allProjects.filter(
-    p => p.ossCategory.slug !== 'new-relic-one-catalog-project'
+    (p) => p.ossCategory.slug !== 'new-relic-one-catalog-project'
   );
 
   return (
     <Layout
       fullWidth
       className={styles.collectionPage}
-      editLink={get(data, 'sitePage.nodes[0].fields.contentEditLink')}
+      editLink={pageContext.fileRelativePath}
     >
       <SEO title="Open source New Relic One applications" />
       <PageHeading
@@ -67,7 +63,7 @@ const NerdpackPage = ({ data }) => {
           <iframe
             width="578"
             height="328.125"
-            src="https://www.youtube.com/embed/ZagZfNQYJEU?controls=0"
+            src="https://www.youtube.com/embed/7omo0qHxku8"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -107,7 +103,7 @@ const NerdpackPage = ({ data }) => {
           </p>
         </header>
         <div className={styles.collectionListing}>
-          {catalogProjects.map(project => {
+          {catalogProjects.map((project) => {
             return (
               <SimpleProjectModule
                 key={project.id}
@@ -129,7 +125,7 @@ const NerdpackPage = ({ data }) => {
           </p>
         </header>
         <div className={styles.collectionListing}>
-          {otherProjects.map(project => {
+          {otherProjects.map((project) => {
             return (
               <SimpleProjectModule
                 key={project.id}
@@ -145,7 +141,8 @@ const NerdpackPage = ({ data }) => {
 };
 
 NerdpackPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 export default NerdpackPage;

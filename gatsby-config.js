@@ -8,12 +8,19 @@ module.exports = {
     description: `New Relic's open source website makes it easy for you to explore the projects we're maintaining as well as our involvement in open standards.`,
     author: `@newrelic`,
     repository: 'https://github.com/newrelic/opensource-website',
-    siteUrl: 'https://opensource.newrelic.com'
+    siteUrl: 'https://opensource.newrelic.com',
+    branch: 'develop',
   },
   plugins: [
     {
       resolve: '@newrelic/gatsby-theme-newrelic',
       options: {
+        gaTrackingId: 'UA-3047412-33',
+        layout: {
+          // 1180px (width) + 28px (padding) * 2 (left/right side)
+          maxWidth: '1236px',
+          contentPadding: '28px',
+        },
         newrelic: {
           // Keyed by process.env.NODE_ENV
           configs: {
@@ -29,7 +36,7 @@ module.exports = {
               licenseKey: '23448da482',
               applicationID: '21547964',
               beacon: 'staging-bam.nr-data.net',
-              errorBeacon: 'staging-bam.nr-data.net'
+              errorBeacon: 'staging-bam.nr-data.net',
             },
             // Our "staging" site (on AWS Amplify) named after the branch it comes from "develop"
 
@@ -45,8 +52,8 @@ module.exports = {
               licenseKey: '23448da482',
               applicationID: '21548202',
               beacon: 'staging-bam.nr-data.net',
-              errorBeacon: 'staging-bam.nr-data.net'
-            }
+              errorBeacon: 'staging-bam.nr-data.net',
+            },
 
             // For local development, uncomment and replace information
             // development: {
@@ -57,17 +64,17 @@ module.exports = {
             //   licenseKey: '',
             //   applicationID: ''
             // }
-          }
-        }
-      }
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/src/data`,
-        ignore: [`**/\.*`] // ignore files starting with a dot
-      }
+        ignore: [`**/\.*`], // ignore files starting with a dot
+      },
     },
     {
       resolve: `gatsby-transformer-json`,
@@ -76,7 +83,7 @@ module.exports = {
         // Found here - https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-transformer-json/src/gatsby-node.js#L8-L20
         typeName: ({ node, object, isArray }) => {
           // eslint-disable-next-line no-unused-vars
-          const getType = function({ node, object, isArray }) {
+          const getType = function ({ node, object, isArray }) {
             if (node.internal.type !== `File`) {
               return _.upperFirst(_.camelCase(`${node.internal.type}`));
             } else if (isArray) {
@@ -87,8 +94,8 @@ module.exports = {
           };
           const typeName = getType({ node, object, isArray });
           return typeName;
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -99,8 +106,8 @@ module.exports = {
         background_color: `#007e8a`,
         theme_color: `#007e8a`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png` // This path is relative to the root of the site.
-      }
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+      },
     },
     'gatsby-plugin-sass',
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -126,8 +133,8 @@ module.exports = {
               // `ignoreFileExtensions` to an empty array.
               // ignoreFileExtensions: []
 
-              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
-            }
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            },
           },
           {
             resolve: `gatsby-remark-images`,
@@ -135,35 +142,13 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590
-            }
-          }
+              maxWidth: 590,
+            },
+          },
         ],
         // remarkPlugins: [require(`gatsby-remark-copy-linked-files`)],
-        extensions: [`.mdx`, `.md`]
-      }
+        extensions: [`.mdx`, `.md`],
+      },
     },
-    {
-      resolve: 'gatsby-plugin-edit-content-links'
-    },
-    {
-      resolve: 'gatsby-plugin-gdpr-tracking',
-      options: {
-        // logging to the console, if debug is true
-        debug: false,
-        googleAnalytics: {
-          // The property ID; the tracking code won't be generated without it.
-          trackingId: 'UA-3047412-33',
-          // Defines it google analytics should be started with out the cookie consent
-          autoStart: false, // <--- default
-          // Setting this parameter is optional
-          anonymize: true, // <--- default
-          // Name of the cookie, that enables the tracking if it is true
-          controlCookieName: 'newrelic-gdpr-consent', // <--- default
-          cookieFlags: 'secure;samesite=none' // <--- default
-        },
-        environments: ['production', 'development']
-      }
-    }
-  ]
+  ],
 };

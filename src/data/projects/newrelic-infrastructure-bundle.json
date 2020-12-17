@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Install the Infra agent",
   "description": "New Relic Infrastructure containerised agent bundle",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Shell",
   "projectTags": [
     "nri",

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for Varnish caching",
   "description": "Capture critical performance metrics and inventory reported by Varnish caching",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

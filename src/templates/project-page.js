@@ -36,6 +36,12 @@ import withDarkMode from '../components/withDarkMode';
 
 export const query = graphql`
   query NewRelicProjects($slug: String, $pagePath: String) {
+    site {
+      siteMetadata {
+        repository
+        branch
+      }
+    }
     project: allProjects(
       filter: { slug: { eq: $slug }, projectType: { eq: "newrelic" } }
     ) {
@@ -45,9 +51,6 @@ export const query = graphql`
     }
     sitePage: allSitePage(filter: { path: { eq: $pagePath } }) {
       nodes {
-        fields {
-          contentEditLink
-        }
         componentPath
         path
       }
@@ -55,7 +58,7 @@ export const query = graphql`
   }
 `;
 
-const ProjectPage = props => {
+const ProjectPage = (props) => {
   const { data, darkMode } = props;
 
   const renderNotFound = () => {
@@ -64,7 +67,6 @@ const ProjectPage = props => {
 
   const project = get(data, 'project.nodes[0]', false);
   // console.debug(project);
-  const contentEditLink = get(data, 'sitePage.nodes[0].fields.contentEditLink');
 
   if (!project) {
     return renderNotFound();
@@ -74,27 +76,38 @@ const ProjectPage = props => {
   const tags = [
     {
       name: 'category',
-      value: get(project, 'ossCategory.title', '')
+      value: get(project, 'ossCategory.title', ''),
     },
     {
       name: 'language',
-      value: get(project, 'primaryLanguage', '')
+      value: get(project, 'primaryLanguage', ''),
     },
     {
       name: 'version',
-      value: get(project, 'stats.latestRelease.name', '')
-    }
+      value: get(project, 'stats.latestRelease.name', ''),
+    },
   ];
 
+  const {
+    site: {
+      siteMetadata: { branch, repository },
+    },
+  } = data;
   const mainContent = get(project, 'mainContent.mdx.compiledMdx', false);
   const supportUrl = get(project, 'supportUrl', false);
   const ossCategory = get(project, 'ossCategory', false);
+  const fileRelativePath = get(
+    project,
+    'mainContent.mdx.fields.fileRelativePath'
+  );
+
+  const contentEditUrl = `${repository}/blob/${branch}/${fileRelativePath}`;
 
   const [screenshotModalActive, setScreenshotModalActive] = useState(false);
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
 
   const renderIssues = ({ projectStats, darkMode }) => {
-    return projectStats.cachedIssues.map(issue => {
+    return projectStats.cachedIssues.map((issue) => {
       return (
         <a
           href={issue.url}
@@ -162,10 +175,10 @@ const ProjectPage = props => {
       );
     });
 
-    const screenshotsObject = projectStats.screenshots.map(screenshot => {
+    const screenshotsObject = projectStats.screenshots.map((screenshot) => {
       return {
         source: screenshot,
-        caption: ''
+        caption: '',
       };
     });
 
@@ -189,7 +202,7 @@ const ProjectPage = props => {
   };
 
   const sidebarProjectTags = () => {
-    const tag = project.projectTags.map(tag => {
+    const tag = project.projectTags.map((tag) => {
       return (
         <li className={styles.sidebarTagListTag} key={tag.title}>
           <a
@@ -214,7 +227,7 @@ const ProjectPage = props => {
     return null;
   };
 
-  const renderCallsToAction = isPageHeadingCTA => {
+  const renderCallsToAction = (isPageHeadingCTA) => {
     return (
       <div
         className={`${styles.callToActionButtonsContainer} ${
@@ -236,25 +249,23 @@ const ProjectPage = props => {
           />
           View Repo
         </Button>
-        {contentEditLink && (
-          <Button
-            as="a"
-            variant={Button.VARIANT.PLAIN}
-            href={contentEditLink}
-            target="__blank"
-            rel="noopener noreferrer"
-            css={css`
-              .dark-mode & {
-                border-color: transparent;
-              }
-            `}
-          >
-            <span className={styles.buttonIcon}>
-              <Edit color="currentColor" size={16} />
-            </span>
-            Edit page
-          </Button>
-        )}
+        <Button
+          as="a"
+          variant={Button.VARIANT.PLAIN}
+          href={contentEditUrl}
+          target="__blank"
+          rel="noopener noreferrer"
+          css={css`
+            .dark-mode & {
+              border-color: transparent;
+            }
+          `}
+        >
+          <span className={styles.buttonIcon}>
+            <Edit color="currentColor" size={16} />
+          </span>
+          Edit page
+        </Button>
       </div>
     );
   };
@@ -263,7 +274,7 @@ const ProjectPage = props => {
     <Layout
       hasHeaderBg
       className={styles.projectPageLayout}
-      editLink={contentEditLink}
+      editLink={fileRelativePath}
     >
       <SEO title={project.title} description={project.description} />
       <PageHeading
@@ -334,8 +345,9 @@ const ProjectPage = props => {
                 <a
                   href={
                     project.contributingGuideUrl ||
-                    `${project.githubUrl}/blob/${project.defaultBranch ||
-                      'master'}/CONTRIBUTING.md`
+                    `${project.githubUrl}/blob/${
+                      project.defaultBranch || 'master'
+                    }/CONTRIBUTING.md`
                   }
                   target="__blank"
                   rel="noopener noreferrer"
@@ -427,7 +439,15 @@ const ProjectPage = props => {
                 <a href={supportUrl} target="__blank" rel="noopener noreferrer">
                   Explorers Hub
                 </a>
-                .
+                , and review the{' '}
+                <a
+                  href="https://docs.newrelic.com/docs/licenses/license-information/general-usage-licenses/global-technical-support-offerings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  New Relic Support Policy
+                </a>{' '}
+                for details on open source support.
               </p>
             </>
           ) : (
@@ -443,7 +463,15 @@ const ProjectPage = props => {
                 >
                   Explorers Hub
                 </a>{' '}
-                for help.
+                for help, and review the{' '}
+                <a
+                  href="https://docs.newrelic.com/docs/licenses/license-information/general-usage-licenses/global-technical-support-offerings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  New Relic Support Policy
+                </a>{' '}
+                for details on open source support.
               </p>
             </>
           )}
@@ -585,7 +613,7 @@ const ProjectPage = props => {
 };
 ProjectPage.propTypes = {
   data: PropTypes.object,
-  darkMode: PropTypes.object
+  darkMode: PropTypes.object,
 };
 
 export default withDarkMode(ProjectPage);

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring data from SNMP servers",
   "description": "Capture critical performance metrics and inventory reported by SNMP servers",
-  "ossCategory": "new-relic-experimental",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri",

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for PostgreSQL databases",
   "description": "Capture critical performance metrics and inventory reported by PostgreSQL databases",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

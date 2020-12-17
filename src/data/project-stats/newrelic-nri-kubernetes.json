@@ -1,22 +1,29 @@
 {
   "projectFullName": "newrelic/nri-kubernetes",
   "issues": {
-    "open": 1
+    "open": 9
   },
-  "releases": 2,
+  "releases": 13,
   "latestRelease": {
-    "name": "v1.25.0",
-    "date": "2020-07-29T10:58:48Z"
+    "name": "v2.0.0",
+    "date": "2020-12-09T10:52:53Z"
   },
-  "commits": 41,
-  "lastSixMonthsCommitTotal": 41,
-  "contributors": 7,
+  "commits": 77,
+  "lastSixMonthsCommitTotal": 77,
+  "contributors": 14,
   "pullRequests": {
     "open": 1
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
     {
       "id": 1083296,
       "login": "smoya",
@@ -39,6 +46,13 @@
       "contributions": 1
     },
     {
+      "id": 717815,
+      "login": "carlosroman",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/717815?v=4",
+      "htmlUrl": "https://github.com/carlosroman",
+      "contributions": 2
+    },
+    {
       "id": 10852,
       "login": "areina",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/10852?v=4",
@@ -46,25 +60,60 @@
       "contributions": 2
     },
     {
+      "id": 969721,
+      "login": "roobre",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/969721?v=4",
+      "htmlUrl": "https://github.com/roobre",
+      "contributions": 3
+    },
+    {
+      "id": 43335750,
+      "login": "paologallinaharbur",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/43335750?v=4",
+      "htmlUrl": "https://github.com/paologallinaharbur",
+      "contributions": 3
+    },
+    {
+      "id": 2054195,
+      "login": "ardias",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
+      "htmlUrl": "https://github.com/ardias",
+      "contributions": 4
+    },
+    {
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
+      "contributions": 5
+    },
+    {
       "id": 159076,
       "login": "douglascamata",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/159076?v=4",
       "htmlUrl": "https://github.com/douglascamata",
-      "contributions": 5
+      "contributions": 6
+    },
+    {
+      "id": 5143130,
+      "login": "gsanchezgavier",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/5143130?v=4",
+      "htmlUrl": "https://github.com/gsanchezgavier",
+      "contributions": 7
     },
     {
       "id": 5297542,
       "login": "alejandrodnm",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/5297542?v=4",
       "htmlUrl": "https://github.com/alejandrodnm",
-      "contributions": 13
+      "contributions": 16
     },
     {
       "id": 503802,
       "login": "jorik",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/503802?v=4",
       "htmlUrl": "https://github.com/jorik",
-      "contributions": 16
+      "contributions": 19
     }
   ],
   "languages": [

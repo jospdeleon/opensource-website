@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/newrelic-oss-cli",
   "issues": {
-    "open": 8
+    "open": 9
   },
   "releases": 3,
   "latestRelease": {
     "name": "v0.0.3",
     "date": "2020-07-03T02:37:10Z"
   },
-  "commits": 34,
-  "lastSixMonthsCommitTotal": 7,
+  "commits": 35,
+  "lastSixMonthsCommitTotal": 5,
   "contributors": 4,
   "pullRequests": {
-    "open": 0
+    "open": 1
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],

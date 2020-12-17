@@ -9,10 +9,10 @@
     "date": null
   },
   "commits": 135,
-  "lastSixMonthsCommitTotal": 4,
+  "lastSixMonthsCommitTotal": 0,
   "contributors": 11,
   "pullRequests": {
-    "open": 1
+    "open": 2
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],

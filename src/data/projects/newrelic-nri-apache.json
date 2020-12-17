@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for the Apache web server",
   "description": "Capture critical performance metrics and inventory reported by Apache web server",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

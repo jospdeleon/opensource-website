@@ -1,41 +1,86 @@
 {
   "projectFullName": "newrelic/newrelic-dotnet-agent",
   "issues": {
-    "open": 8
+    "open": 66
   },
-  "releases": 43,
+  "releases": 51,
   "latestRelease": {
-    "name": "v8.30.0",
-    "date": null
+    "name": "v8.36.0",
+    "date": "2020-12-08T23:06:18Z"
   },
-  "commits": 108,
-  "lastSixMonthsCommitTotal": 78,
-  "contributors": 9,
+  "commits": 245,
+  "lastSixMonthsCommitTotal": 210,
+  "contributors": 13,
   "pullRequests": {
-    "open": 1
+    "open": 2
   },
   "searchCategory": "good first issue",
-  "cachedIssues": [],
+  "cachedIssues": [
+    {
+      "id": "MDU6SXNzdWU2ODMxMjkyNDk=",
+      "title": "Reduce string allocations in BrowserMonitoringWriter",
+      "url": "https://github.com/newrelic/newrelic-dotnet-agent/issues/117",
+      "createdAt": "2020-08-20T22:16:35Z",
+      "comments": {
+        "totalCount": 2
+      },
+      "author": {
+        "login": "lspangler584",
+        "id": "MDQ6VXNlcjIwMjY3OTc1",
+        "email": "",
+        "name": null
+      },
+      "number": 117,
+      "createdBy": "lspangler584"
+    },
+    {
+      "id": "MDU6SXNzdWU2ODMxNTIwOTE=",
+      "title": "InstrumentationWatcher can cause ThreadAbortException",
+      "url": "https://github.com/newrelic/newrelic-dotnet-agent/issues/122",
+      "createdAt": "2020-08-20T23:20:15Z",
+      "comments": {
+        "totalCount": 0
+      },
+      "author": {
+        "login": "lspangler584",
+        "id": "MDQ6VXNlcjIwMjY3OTc1",
+        "email": "",
+        "name": null
+      },
+      "number": 122,
+      "createdBy": "lspangler584"
+    },
+    {
+      "id": "MDU6SXNzdWU2ODM2NDY3NzU=",
+      "title": "Stop using Exceptions for flow control",
+      "url": "https://github.com/newrelic/newrelic-dotnet-agent/issues/131",
+      "createdAt": "2020-08-21T15:36:21Z",
+      "comments": {
+        "totalCount": 1
+      },
+      "author": {
+        "login": "lspangler584",
+        "id": "MDQ6VXNlcjIwMjY3OTc1",
+        "email": "",
+        "name": null
+      },
+      "number": 131,
+      "createdBy": "lspangler584"
+    }
+  ],
   "cachedContributors": [
     {
-      "id": 20267975,
-      "login": "lspangler584",
-      "avatarUrl": "https://avatars2.githubusercontent.com/u/20267975?v=4",
-      "htmlUrl": "https://github.com/lspangler584",
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
       "contributions": 1
     },
     {
-      "id": 6098021,
-      "login": "jaffinito",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/6098021?v=4",
-      "htmlUrl": "https://github.com/jaffinito",
-      "contributions": 1
-    },
-    {
-      "id": 4761745,
-      "login": "elucus",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/4761745?v=4",
-      "htmlUrl": "https://github.com/elucus",
+      "id": 28942544,
+      "login": "katiewest820",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/28942544?v=4",
+      "htmlUrl": "https://github.com/katiewest820",
       "contributions": 1
     },
     {
@@ -46,17 +91,31 @@
       "contributions": 2
     },
     {
+      "id": 69914680,
+      "login": "angelatan2",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/69914680?v=4",
+      "htmlUrl": "https://github.com/angelatan2",
+      "contributions": 3
+    },
+    {
+      "id": 4761745,
+      "login": "elucus",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/4761745?v=4",
+      "htmlUrl": "https://github.com/elucus",
+      "contributions": 4
+    },
+    {
+      "id": 188129,
+      "login": "bgrainger",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/188129?v=4",
+      "htmlUrl": "https://github.com/bgrainger",
+      "contributions": 4
+    },
+    {
       "id": 3676547,
       "login": "alanwest",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/3676547?v=4",
       "htmlUrl": "https://github.com/alanwest",
-      "contributions": 2
-    },
-    {
-      "id": 56414817,
-      "login": "vuqtran88",
-      "avatarUrl": "https://avatars2.githubusercontent.com/u/56414817?v=4",
-      "htmlUrl": "https://github.com/vuqtran88",
       "contributions": 5
     },
     {
@@ -67,18 +126,39 @@
       "contributions": 6
     },
     {
-      "id": 57361211,
-      "login": "nr-ahemsath",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/57361211?v=4",
-      "htmlUrl": "https://github.com/nr-ahemsath",
-      "contributions": 6
+      "id": 20267975,
+      "login": "lspangler584",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/20267975?v=4",
+      "htmlUrl": "https://github.com/lspangler584",
+      "contributions": 24
+    },
+    {
+      "id": 6098021,
+      "login": "jaffinito",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/6098021?v=4",
+      "htmlUrl": "https://github.com/jaffinito",
+      "contributions": 25
+    },
+    {
+      "id": 56414817,
+      "login": "vuqtran88",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/56414817?v=4",
+      "htmlUrl": "https://github.com/vuqtran88",
+      "contributions": 27
     },
     {
       "id": 3522458,
       "login": "jifeingo",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/3522458?v=4",
       "htmlUrl": "https://github.com/jifeingo",
-      "contributions": 25
+      "contributions": 38
+    },
+    {
+      "id": 57361211,
+      "login": "nr-ahemsath",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/57361211?v=4",
+      "htmlUrl": "https://github.com/nr-ahemsath",
+      "contributions": 46
     }
   ],
   "languages": [

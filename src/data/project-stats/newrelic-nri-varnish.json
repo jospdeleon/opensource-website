@@ -8,11 +8,11 @@
     "name": "v2.1.0",
     "date": "2019-11-22T16:43:12Z"
   },
-  "commits": 74,
-  "lastSixMonthsCommitTotal": 4,
-  "contributors": 8,
+  "commits": 81,
+  "lastSixMonthsCommitTotal": 11,
+  "contributors": 7,
   "pullRequests": {
-    "open": 0
+    "open": 2
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -51,13 +51,6 @@
       "avatarUrl": "https://avatars3.githubusercontent.com/u/15685307?v=4",
       "htmlUrl": "https://github.com/cristianciutea",
       "contributions": 2
-    },
-    {
-      "id": 1773616,
-      "login": "theletterf",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
-      "htmlUrl": "https://github.com/theletterf",
-      "contributions": 3
     },
     {
       "id": 7886905,

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Install the Infra agent",
   "description": "Collects inventory data and metrics of your hosts and sends it to the New Relic platform",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri",

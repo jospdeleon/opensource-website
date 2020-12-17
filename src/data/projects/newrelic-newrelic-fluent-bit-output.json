@@ -13,11 +13,9 @@
   "iconUrl": null,
   "shortDescription": "Fluent Bit to New Relic Logs",
   "description": "A Fluent Bit output plugin that sends logs to New Relic",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
-  "projectTags": [
-    "logging"
-  ],
+  "projectTags": ["logging"],
   "acceptsContributions": true,
   "website": {
     "title": "Fluent Bit Output for New Relic",

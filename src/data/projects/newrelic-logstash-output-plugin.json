@@ -13,11 +13,9 @@
   "iconUrl": null,
   "shortDescription": "",
   "description": "This is a plugin for Logstash that outputs logs to New Relic.",
-  "ossCategory": "example-code",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Ruby",
-  "projectTags": [
-    "logging"
-  ],
+  "projectTags": ["logging"],
   "acceptsContributions": false,
   "website": {
     "title": "New Relic Logstash Output Plugin",

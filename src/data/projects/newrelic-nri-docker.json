@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Docker Integration for New Relic Infrastructure",
   "description": "Reports status and metrics of Docker containers running into a Host",
-  "ossCategory": "new-relic-experimental",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

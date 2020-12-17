@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Log Enricher for the New Relic Node Agent",
   "description": "New Relic's Winston log enricher for use with the Node Agent",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "JavaScript",
   "projectTags": [
     "logging",

@@ -25,11 +25,15 @@ export const query = graphql`
   }
 `;
 
-const CollectionPage = ({ data }) => {
-  const allProjects = data.allProjects.edges.map(p => p.node);
+const CollectionPage = ({ data, pageContext }) => {
+  const allProjects = data.allProjects.edges.map((p) => p.node);
 
   return (
-    <Layout fullWidth className={styles.collectionPage}>
+    <Layout
+      fullWidth
+      className={styles.collectionPage}
+      editLink={pageContext.fileRelativePath}
+    >
       <SEO title="Open source projects to which New Relic contributes" />
       <PageHeading
         title="New Relic Agents"
@@ -72,7 +76,7 @@ const CollectionPage = ({ data }) => {
           </p>
         </header>
         <div className={styles.collectionListing}>
-          {allProjects.map(project => {
+          {allProjects.map((project) => {
             return (
               <SimpleProjectModule
                 key={project.id}
@@ -88,7 +92,8 @@ const CollectionPage = ({ data }) => {
 };
 
 CollectionPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 export default CollectionPage;

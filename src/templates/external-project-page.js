@@ -30,9 +30,6 @@ export const query = graphql`
     }
     sitePage: allSitePage(filter: { path: { eq: $pagePath } }) {
       nodes {
-        fields {
-          contentEditLink
-        }
         componentPath
         path
       }
@@ -43,7 +40,7 @@ export const query = graphql`
 const SubProjects = ({ projects }) => {
   return (
     <ul className={styles.subProjectList}>
-      {projects.map(p => {
+      {projects.map((p) => {
         return (
           <li key={p.fullName} className={styles.subProject}>
             <div className={styles.subProjectCopy}>
@@ -58,7 +55,7 @@ const SubProjects = ({ projects }) => {
               <div className={styles.subProjectCallToAction}>
                 <Button
                   as="a"
-                  variant={Button.VARIANT.PLAIN}
+                  variant={Button.VARIANT.LINK}
                   href={p.githubUrl}
                   target="__blank"
                   css={css`
@@ -91,7 +88,7 @@ const SubProjects = ({ projects }) => {
   );
 };
 SubProjects.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array,
 };
 
 const ExternalProjectPage = ({ data }) => {
@@ -100,7 +97,6 @@ const ExternalProjectPage = ({ data }) => {
   };
 
   const project = get(data, 'project.nodes[0]', false);
-  const contentEditLink = get(data, 'sitePage.nodes[0].fields.contentEditLink');
   const subProjects = get(project, 'subProjects', false);
 
   if (!project) {
@@ -108,12 +104,16 @@ const ExternalProjectPage = ({ data }) => {
   }
 
   const mainContent = get(project, 'mainContent.mdx.compiledMdx', false);
+  const fileRelativePath = get(
+    project,
+    'mainContent.mdx.fields.fileRelativePath'
+  );
 
   return (
     <Layout
       hasHeaderBg
       className={styles.projectPageLayout}
-      editLink={contentEditLink}
+      editLink={fileRelativePath}
     >
       <SEO title={project.title} />
       <PageHeading
@@ -142,8 +142,9 @@ const ExternalProjectPage = ({ data }) => {
                 <Button
                   as="a"
                   variant={Button.VARIANT.PRIMARY}
-                  href={`${get(project, ['website', 'url'], '') ||
-                    project.githubUrl}`}
+                  href={`${
+                    get(project, ['website', 'url'], '') || project.githubUrl
+                  }`}
                   target="__blank"
                   rel="noopener noreferrer"
                 >
@@ -151,7 +152,7 @@ const ExternalProjectPage = ({ data }) => {
                 </Button>
                 <Button
                   as="a"
-                  variant={Button.VARIANT.PLAIN}
+                  variant={Button.VARIANT.LINK}
                   href={project.githubUrl}
                   rel="noopener noreferrer"
                   css={css`
@@ -175,7 +176,7 @@ const ExternalProjectPage = ({ data }) => {
           {project.team && (
             <>
               <h4>Involved from New Relic</h4>
-              {project.team.map(relic => (
+              {project.team.map((relic) => (
                 <AsideNavigationItem
                   key={relic.name}
                   icon={relic.avatarUrl}
@@ -192,7 +193,7 @@ const ExternalProjectPage = ({ data }) => {
   );
 };
 ExternalProjectPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
 };
 
 export default ExternalProjectPage;

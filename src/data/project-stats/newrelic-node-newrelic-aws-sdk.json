@@ -1,16 +1,16 @@
 {
   "projectFullName": "newrelic/node-newrelic-aws-sdk",
   "issues": {
-    "open": 5
+    "open": 2
   },
-  "releases": 7,
+  "releases": 9,
   "latestRelease": {
-    "name": "v1.1.3",
+    "name": "v3.0.0",
     "date": null
   },
-  "commits": 134,
-  "lastSixMonthsCommitTotal": 15,
-  "contributors": 6,
+  "commits": 200,
+  "lastSixMonthsCommitTotal": 68,
+  "contributors": 9,
   "pullRequests": {
     "open": 1
   },
@@ -18,10 +18,17 @@
   "cachedIssues": [],
   "cachedContributors": [
     {
-      "id": 54335840,
-      "login": "carlonewrelic",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/54335840?v=4",
-      "htmlUrl": "https://github.com/carlonewrelic",
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
+    {
+      "id": 7992384,
+      "login": "paperclypse",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/7992384?v=4",
+      "htmlUrl": "https://github.com/paperclypse",
       "contributions": 1
     },
     {
@@ -32,11 +39,18 @@
       "contributions": 4
     },
     {
-      "id": 32520944,
-      "login": "astormnewrelic",
-      "avatarUrl": "https://avatars2.githubusercontent.com/u/32520944?v=4",
-      "htmlUrl": "https://github.com/astormnewrelic",
-      "contributions": 11
+      "id": 398399,
+      "login": "nijotz",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/398399?v=4",
+      "htmlUrl": "https://github.com/nijotz",
+      "contributions": 6
+    },
+    {
+      "id": 54335840,
+      "login": "carlo-808",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/54335840?v=4",
+      "htmlUrl": "https://github.com/carlo-808",
+      "contributions": 8
     },
     {
       "id": 7945073,
@@ -44,6 +58,13 @@
       "avatarUrl": "https://avatars2.githubusercontent.com/u/7945073?v=4",
       "htmlUrl": "https://github.com/psvet",
       "contributions": 19
+    },
+    {
+      "id": 32520944,
+      "login": "astormnewrelic",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/32520944?v=4",
+      "htmlUrl": "https://github.com/astormnewrelic",
+      "contributions": 20
     },
     {
       "id": 466761,
@@ -57,7 +78,7 @@
       "login": "michaelgoin",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/11223178?v=4",
       "htmlUrl": "https://github.com/michaelgoin",
-      "contributions": 41
+      "contributions": 57
     }
   ],
   "languages": [
@@ -69,11 +90,11 @@
   ],
   "screenshots": [],
   "license": {
-    "id": "MDc6TGljZW5zZTA=",
-    "name": "Other",
-    "spdxId": "NOASSERTION",
-    "url": "http://choosealicense.com/licenses/other/",
-    "featured": false,
-    "key": "other"
+    "id": "MDc6TGljZW5zZTI=",
+    "name": "Apache License 2.0",
+    "spdxId": "Apache-2.0",
+    "url": "http://choosealicense.com/licenses/apache-2.0/",
+    "featured": true,
+    "key": "apache-2.0"
   }
 }

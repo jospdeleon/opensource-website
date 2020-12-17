@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Collect data on Brokers, Topics, Producers, and Consumer",
   "description": "Captures critical performance metrics and inventory reported by Kafka clusters",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

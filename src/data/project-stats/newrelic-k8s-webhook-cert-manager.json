@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/k8s-webhook-cert-manager",
   "issues": {
-    "open": 1
+    "open": 2
   },
-  "releases": 9,
+  "releases": 10,
   "latestRelease": {
-    "name": "v1.3.0",
-    "date": "2020-07-27T14:11:14Z"
+    "name": "v1.3.1",
+    "date": "2020-11-30T17:11:28Z"
   },
-  "commits": 44,
-  "lastSixMonthsCommitTotal": 9,
-  "contributors": 9,
+  "commits": 48,
+  "lastSixMonthsCommitTotal": 5,
+  "contributors": 11,
   "pullRequests": {
-    "open": 0
+    "open": 5
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -51,6 +51,20 @@
       "avatarUrl": "https://avatars3.githubusercontent.com/u/15685307?v=4",
       "htmlUrl": "https://github.com/cristianciutea",
       "contributions": 1
+    },
+    {
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
+      "contributions": 1
+    },
+    {
+      "id": 43335750,
+      "login": "paologallinaharbur",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/43335750?v=4",
+      "htmlUrl": "https://github.com/paologallinaharbur",
+      "contributions": 2
     },
     {
       "id": 159076,
@@ -100,11 +114,11 @@
   ],
   "screenshots": [],
   "license": {
-    "id": "MDc6TGljZW5zZTA=",
-    "name": "Other",
-    "spdxId": "NOASSERTION",
-    "url": "http://choosealicense.com/licenses/other/",
-    "featured": false,
-    "key": "other"
+    "id": "MDc6TGljZW5zZTI=",
+    "name": "Apache License 2.0",
+    "spdxId": "Apache-2.0",
+    "url": "http://choosealicense.com/licenses/apache-2.0/",
+    "featured": true,
+    "key": "apache-2.0"
   }
 }

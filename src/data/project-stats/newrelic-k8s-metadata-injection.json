@@ -1,22 +1,29 @@
 {
   "projectFullName": "newrelic/k8s-metadata-injection",
   "issues": {
-    "open": 0
+    "open": 2
   },
-  "releases": 9,
+  "releases": 10,
   "latestRelease": {
-    "name": "v1.3.0",
-    "date": "2020-07-27T15:25:30Z"
+    "name": "v1.3.1",
+    "date": "2020-11-27T15:45:47Z"
   },
-  "commits": 87,
-  "lastSixMonthsCommitTotal": 12,
-  "contributors": 9,
+  "commits": 92,
+  "lastSixMonthsCommitTotal": 8,
+  "contributors": 11,
   "pullRequests": {
     "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
     {
       "id": 503802,
       "login": "jorik",
@@ -39,18 +46,25 @@
       "contributions": 1
     },
     {
+      "id": 25376553,
+      "login": "MagdaPaj",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/25376553?v=4",
+      "htmlUrl": "https://github.com/MagdaPaj",
+      "contributions": 2
+    },
+    {
+      "id": 969721,
+      "login": "roobre",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/969721?v=4",
+      "htmlUrl": "https://github.com/roobre",
+      "contributions": 4
+    },
+    {
       "id": 7886905,
       "login": "fryckbos",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/7886905?v=4",
       "htmlUrl": "https://github.com/fryckbos",
       "contributions": 4
-    },
-    {
-      "id": 25376553,
-      "login": "MagdaPaj",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/25376553?v=4",
-      "htmlUrl": "https://github.com/MagdaPaj",
-      "contributions": 8
     },
     {
       "id": 5297542,

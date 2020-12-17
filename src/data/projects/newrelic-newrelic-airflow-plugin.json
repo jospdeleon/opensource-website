@@ -13,11 +13,9 @@
   "iconUrl": null,
   "shortDescription": "Apache Airflow exporter",
   "description": "Send Apache Airflow metrics to New Relic.",
-  "ossCategory": "new-relic-experimental",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Python",
-  "projectTags": [
-    "exporter"
-  ],
+  "projectTags": ["exporter"],
   "acceptsContributions": false,
   "website": {
     "title": "New Relic Airflow Metric Exporter",

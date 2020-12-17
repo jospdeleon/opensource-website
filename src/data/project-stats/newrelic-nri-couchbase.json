@@ -8,11 +8,11 @@
     "name": "v2.3.7",
     "date": "2020-07-22T13:37:47Z"
   },
-  "commits": 123,
-  "lastSixMonthsCommitTotal": 9,
+  "commits": 134,
+  "lastSixMonthsCommitTotal": 16,
   "contributors": 9,
   "pullRequests": {
-    "open": 0
+    "open": 2
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -32,6 +32,13 @@
       "contributions": 1
     },
     {
+      "id": 13043208,
+      "login": "Kav91",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/13043208?v=4",
+      "htmlUrl": "https://github.com/Kav91",
+      "contributions": 1
+    },
+    {
       "id": 7229810,
       "login": "zackkendra",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/7229810?v=4",
@@ -44,13 +51,6 @@
       "avatarUrl": "https://avatars3.githubusercontent.com/u/5297542?v=4",
       "htmlUrl": "https://github.com/alejandrodnm",
       "contributions": 2
-    },
-    {
-      "id": 1773616,
-      "login": "theletterf",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
-      "htmlUrl": "https://github.com/theletterf",
-      "contributions": 3
     },
     {
       "id": 13438133,

@@ -5,11 +5,11 @@
   },
   "releases": 0,
   "latestRelease": null,
-  "commits": 18,
-  "lastSixMonthsCommitTotal": 7,
-  "contributors": 5,
+  "commits": 35,
+  "lastSixMonthsCommitTotal": 16,
+  "contributors": 10,
   "pullRequests": {
-    "open": 1
+    "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -19,6 +19,20 @@
       "login": "ngotim",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/2571329?v=4",
       "htmlUrl": "https://github.com/ngotim",
+      "contributions": 1
+    },
+    {
+      "id": 43244625,
+      "login": "melissaklein24",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/43244625?v=4",
+      "htmlUrl": "https://github.com/melissaklein24",
+      "contributions": 1
+    },
+    {
+      "id": 6243832,
+      "login": "jsubirat",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/6243832?v=4",
+      "htmlUrl": "https://github.com/jsubirat",
       "contributions": 1
     },
     {
@@ -34,6 +48,27 @@
       "avatarUrl": "https://avatars2.githubusercontent.com/u/536332?v=4",
       "htmlUrl": "https://github.com/danielsig727",
       "contributions": 1
+    },
+    {
+      "id": 40015725,
+      "login": "bangle-98",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/40015725?v=4",
+      "htmlUrl": "https://github.com/bangle-98",
+      "contributions": 1
+    },
+    {
+      "id": 13105375,
+      "login": "matildasmeds",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/13105375?v=4",
+      "htmlUrl": "https://github.com/matildasmeds",
+      "contributions": 3
+    },
+    {
+      "id": 62337995,
+      "login": "jodstrcil",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/62337995?v=4",
+      "htmlUrl": "https://github.com/jodstrcil",
+      "contributions": 3
     },
     {
       "id": 13151736,

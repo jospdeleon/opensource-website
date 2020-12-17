@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { get } from 'lodash';
 import { css } from '@emotion/core';
+import marked from 'marked';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageHeading from '../components/PageHeading';
 import community from '../images/categories/Community_Project.png';
+import community_plus from '../images/categories/Community_Plus.png';
 import nr1catalog from '../images/categories/New_Relic_One_Catalog_Project.png';
 import example from '../images/categories/Example_Code.png';
 import experimental from '../images/categories/Experimental.png';
-import product from '../images/categories/Product_Delivered_in_Open_Source.png';
 import archived from '../images/categories/Archived.png';
 import styles from './oss-category.module.scss';
 
@@ -31,22 +32,24 @@ export const query = graphql`
 
 const headers = [
   community,
+  community_plus,
   nr1catalog,
   example,
   experimental,
-  product,
-  archived
+  archived,
 ];
 
-const OssCategoryPage = ({ data }) => {
+marked.setOptions({ gfm: true });
+
+const OssCategoryPage = ({ data, pageContext }) => {
   const categories = get(data, 'allOssCategory.nodes', []);
 
   const categoryNavList = categories
-    .filter(cat => cat.slug !== 'tbd')
-    .map(cat => {
+    .filter((cat) => cat.slug !== 'tbd')
+    .map((cat) => {
       return (
         <li key={cat.slug} className={styles.categorySidebarItem}>
-          <a href={`#${cat.slug}`} className={styles.categorySidebarItemLink}>
+          <a href={`./#${cat.slug}`} className={styles.categorySidebarItemLink}>
             {cat.title}
           </a>
         </li>
@@ -54,7 +57,7 @@ const OssCategoryPage = ({ data }) => {
     });
 
   const categoryList = categories
-    .filter(cat => cat.slug !== 'tbd')
+    .filter((cat) => cat.slug !== 'tbd')
     .map((cat, index) => {
       return (
         <React.Fragment key={cat.slug}>
@@ -70,7 +73,10 @@ const OssCategoryPage = ({ data }) => {
               <h3>Requirements</h3>
               <ul>
                 {cat.requirements.map((req, i) => (
-                  <li key={i}>{req}</li>
+                  <li
+                    key={i}
+                    dangerouslySetInnerHTML={{ __html: marked(req) }}
+                  />
                 ))}
               </ul>
             </>
@@ -80,7 +86,7 @@ const OssCategoryPage = ({ data }) => {
     });
 
   return (
-    <Layout>
+    <Layout editLink={pageContext.fileRelativePath}>
       <SEO title="New Relic Open Source Categories" />
       <PageHeading
         title="New Relic Open Source Categories"
@@ -115,7 +121,8 @@ const OssCategoryPage = ({ data }) => {
 };
 
 OssCategoryPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 export default OssCategoryPage;

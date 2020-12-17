@@ -1,0 +1,56 @@
+{
+  "projectFullName": "newrelic-experimental/newrelic-TSAK",
+  "issues": {
+    "open": 0
+  },
+  "releases": 1,
+  "latestRelease": {
+    "name": "v0.1-alpha",
+    "date": "2020-11-20T23:55:37Z"
+  },
+  "commits": 71,
+  "lastSixMonthsCommitTotal": 71,
+  "contributors": 2,
+  "pullRequests": {
+    "open": 0
+  },
+  "searchCategory": "good first issue",
+  "cachedIssues": [],
+  "cachedContributors": [
+    {
+      "id": 3536684,
+      "login": "sschwartzman",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/3536684?v=4",
+      "htmlUrl": "https://github.com/sschwartzman",
+      "contributions": 2
+    },
+    {
+      "id": 2127420,
+      "login": "vulogov",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/2127420?v=4",
+      "htmlUrl": "https://github.com/vulogov",
+      "contributions": 65
+    }
+  ],
+  "languages": [
+    {
+      "id": "MDg6TGFuZ3VhZ2U0MDM=",
+      "name": "Makefile",
+      "color": "#427819"
+    },
+    {
+      "id": "MDg6TGFuZ3VhZ2UxOTA=",
+      "name": "Go",
+      "color": "#00ADD8"
+    }
+  ],
+  "screenshots": [],
+  "license": {
+    "id": "MDc6TGljZW5zZTI=",
+    "name": "Apache License 2.0",
+    "spdxId": "Apache-2.0",
+    "url": "http://choosealicense.com/licenses/apache-2.0/",
+    "featured": true,
+    "key": "apache-2.0"
+  }
+}

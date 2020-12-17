@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/tutone",
   "issues": {
-    "open": 0
+    "open": 3
   },
-  "releases": 2,
+  "releases": 13,
   "latestRelease": {
-    "name": "v0.1.1",
-    "date": "2020-07-24T00:41:37Z"
+    "name": "v0.4.2",
+    "date": "2020-12-17T00:01:53Z"
   },
-  "commits": 107,
-  "lastSixMonthsCommitTotal": 107,
+  "commits": 345,
+  "lastSixMonthsCommitTotal": 331,
   "contributors": 5,
   "pullRequests": {
-    "open": 1
+    "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -25,32 +25,32 @@
       "contributions": 2
     },
     {
-      "id": 455419,
-      "login": "jthurman42",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/455419?v=4",
-      "htmlUrl": "https://github.com/jthurman42",
-      "contributions": 6
+      "id": 25180681,
+      "login": "renovate-bot",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/25180681?v=4",
+      "htmlUrl": "https://github.com/renovate-bot",
+      "contributions": 28
     },
     {
       "id": 2590905,
       "login": "sanderblue",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/2590905?v=4",
       "htmlUrl": "https://github.com/sanderblue",
-      "contributions": 9
+      "contributions": 39
     },
     {
-      "id": 25180681,
-      "login": "renovate-bot",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/25180681?v=4",
-      "htmlUrl": "https://github.com/renovate-bot",
-      "contributions": 10
+      "id": 455419,
+      "login": "jthurman42",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/455419?v=4",
+      "htmlUrl": "https://github.com/jthurman42",
+      "contributions": 40
     },
     {
       "id": 29264964,
       "login": "zlesnr",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/29264964?v=4",
       "htmlUrl": "https://github.com/zlesnr",
-      "contributions": 43
+      "contributions": 125
     }
   ],
   "languages": [

@@ -1,3 +1,170 @@
+## [1.9.6](https://github.com/newrelic/opensource-website/compare/v1.9.5...v1.9.6) (2020-12-08)
+
+
+### Bug Fixes
+
+* upgrade @newrelic/gatsby-theme-newrelic ([5181e64](https://github.com/newrelic/opensource-website/commit/5181e64bb79387efb82189e2ae79f739902b195b))
+* upgrade gatsby-plugin-manifest ([9894060](https://github.com/newrelic/opensource-website/commit/98940609d5c8de1f213361ce7769fd0d7801777c))
+* upgrade gatsby-plugin-sharp ([5a82bd8](https://github.com/newrelic/opensource-website/commit/5a82bd85e8149abe4fa44ebf6b91526d6e5ed1d0))
+* use the CookieConsentDialog from the theme ([a0b992a](https://github.com/newrelic/opensource-website/commit/a0b992af586d945213e7ec4b160e2dfd603df343))
+
+## [1.9.5](https://github.com/newrelic/opensource-website/compare/v1.9.4...v1.9.5) (2020-11-20)
+
+
+### Bug Fixes
+
+* support multi-line env var ([e574c36](https://github.com/newrelic/opensource-website/commit/e574c361e93424c6671525490d5cfae3c5f4136b))
+
+## [1.9.4](https://github.com/newrelic/opensource-website/compare/v1.9.3...v1.9.4) (2020-10-30)
+
+
+### Bug Fixes
+
+* shadow logo component for the gatsby theme ([c4ceb18](https://github.com/newrelic/opensource-website/commit/c4ceb187811056b1d9296c2ba9c4bd258eef1e93))
+* upgrade @newrelic/gatsby-theme-newrelic ([467eece](https://github.com/newrelic/opensource-website/commit/467eece5215d88c2eff88b62da7a7f24a445f938))
+* upgrade @newrelic/gatsby-theme-newrelic, gatsby, gatsby-plugin-mdx and add missing peer deps ([ac9bca6](https://github.com/newrelic/opensource-website/commit/ac9bca644a4a8f98ca0d8db88454d873cb393b46))
+
+## [1.9.3](https://github.com/newrelic/opensource-website/compare/v1.9.2...v1.9.3) (2020-10-28)
+
+
+### Bug Fixes
+
+* Trigger new patch release ([8c6f35d](https://github.com/newrelic/opensource-website/commit/8c6f35de64a56b3867b0019ca67159af70d191fd))
+
+## [1.9.2](https://github.com/newrelic/opensource-website/compare/v1.9.1...v1.9.2) (2020-08-31)
+
+
+### Bug Fixes
+
+* add check to see if file exists before require ([#631](https://github.com/newrelic/opensource-website/issues/631)) ([27487d5](https://github.com/newrelic/opensource-website/commit/27487d5c48bb0898f2b0db061f197c174794f714))
+
+## [1.9.1](https://github.com/newrelic/opensource-website/compare/v1.9.0...v1.9.1) (2020-08-28)
+
+
+### Bug Fixes
+
+* update OSS category for some repositories ([8807208](https://github.com/newrelic/opensource-website/commit/8807208d032dfe971308a532e220869ce3e2c1a9))
+
+# [1.9.0](https://github.com/newrelic/opensource-website/compare/v1.8.7...v1.9.0) (2020-08-21)
+
+
+### Features
+
+* add check for project tags ([#622](https://github.com/newrelic/opensource-website/issues/622)) ([50711c2](https://github.com/newrelic/opensource-website/commit/50711c2a945e045ad32e633296136cdbd34b6eda))
+
+## [1.8.7](https://github.com/newrelic/opensource-website/compare/v1.8.6...v1.8.7) (2020-08-20)
+
+
+### Bug Fixes
+
+* ensure header has backdrop that goes the full browser viewport ([d7638f8](https://github.com/newrelic/opensource-website/commit/d7638f85b47357347bb143c531e08f08af118571))
+
+## [1.8.6](https://github.com/newrelic/opensource-website/compare/v1.8.5...v1.8.6) (2020-08-20)
+
+
+### Bug Fixes
+
+* bump gatsby-theme-newrelic version ([f8ab1bb](https://github.com/newrelic/opensource-website/commit/f8ab1bb7f52594da81b75b14241c1a22a5e00d61))
+
+## [1.8.5](https://github.com/newrelic/opensource-website/compare/v1.8.4...v1.8.5) (2020-08-19)
+
+
+### Bug Fixes
+
+* adapt mobile site-specific nav to coordinate with additional of mobile GlobalHeader ([3b46f45](https://github.com/newrelic/opensource-website/commit/3b46f455adb6d96794deb52c93501f0ce03a8b64))
+* adapt the collection module styles to accomodate a mobile GlobalHeader ([16f614f](https://github.com/newrelic/opensource-website/commit/16f614f8d7caa999e1b7213b831d419d106d90d9))
+* add style overrides for GlobalHeader specific to the open-source styling context. Remove hiding of GlobalHeader on mobile/narrow views and remove the static position overrride to meet requirement that GlobalHeader behave as on other sites ([53c2a54](https://github.com/newrelic/opensource-website/commit/53c2a54c52cb2e17998cbcc708855967985345b0))
+* update Jets snapshots related to enabling GlobalHeader on mobile views ([7ff7b7f](https://github.com/newrelic/opensource-website/commit/7ff7b7fd3fcff3242d0b82aa87debfc6442aadbb))
+
+## [1.8.4](https://github.com/newrelic/opensource-website/compare/v1.8.3...v1.8.4) (2020-08-12)
+
+
+### Bug Fixes
+
+* update OS category images ([#8](https://github.com/newrelic/opensource-website/issues/8)) ([c6e8b67](https://github.com/newrelic/opensource-website/commit/c6e8b6739d7ba5a97ea252908a0e85fc616b7bf0))
+
+## [1.8.3](https://github.com/newrelic/opensource-website/compare/v1.8.2...v1.8.3) (2020-08-11)
+
+
+### Bug Fixes
+
+* enable search in global header ([b0da8a9](https://github.com/newrelic/opensource-website/commit/b0da8a9bfed7b535196c8f036a22213e1afe6af3))
+
+## [1.8.2](https://github.com/newrelic/opensource-website/compare/v1.8.1...v1.8.2) (2020-08-10)
+
+
+### Bug Fixes
+
+* add title and info meta tags for swiftype to index ([717cbdc](https://github.com/newrelic/opensource-website/commit/717cbdc35320353c11d45bda2a4b36bde3768111))
+
+## [1.8.1](https://github.com/newrelic/opensource-website/compare/v1.8.0...v1.8.1) (2020-08-10)
+
+
+### Bug Fixes
+
+* ensure dark mode mobile button shows close icon ([#595](https://github.com/newrelic/opensource-website/issues/595)) ([2725889](https://github.com/newrelic/opensource-website/commit/27258893fb344473fd1c9af81c86f5e9c5579fec))
+
+# [1.8.0](https://github.com/newrelic/opensource-website/compare/v1.7.1...v1.8.0) (2020-08-06)
+
+
+### Bug Fixes
+
+* use GlobalHeader from theme ([eeed75f](https://github.com/newrelic/opensource-website/commit/eeed75fdd4c7df9aa8b62f5fd06bf083154d15a9))
+* use min-height for layout container to avoid hidden global header ([272a4ee](https://github.com/newrelic/opensource-website/commit/272a4ee3b74a4fc6a4cfaaec4284d0e0fb64ab29))
+
+
+### Features
+
+* added serch functionality from theme ([da74d61](https://github.com/newrelic/opensource-website/commit/da74d610e95aa8831eb8036233d92d07aa8c0d3b))
+
+## [1.7.1](https://github.com/newrelic/opensource-website/compare/v1.7.0...v1.7.1) (2020-08-03)
+
+
+### Bug Fixes
+
+* **explore-projects:** updated styling for project description length. Closes [#579](https://github.com/newrelic/opensource-website/issues/579) ([0efbc8a](https://github.com/newrelic/opensource-website/commit/0efbc8af2330b288190648814d03fcb9e5acbdc5))
+
+# [1.7.0](https://github.com/newrelic/opensource-website/compare/v1.6.1...v1.7.0) (2020-07-30)
+
+
+### Bug Fixes
+
+* build collections ([2890dcb](https://github.com/newrelic/opensource-website/commit/2890dcb039eef98e477caf1782b126a12bc06a84))
+* center homepage collection list of projects ([89ead32](https://github.com/newrelic/opensource-website/commit/89ead32f7f101befdf54c76a268f3f569cd66554))
+* merge changes and arrange homepage and landing page content ([52afb68](https://github.com/newrelic/opensource-website/commit/52afb68cd875d623dcd5ff60e27a7db7fcf2eede))
+* responsive + dark mode fixes for collections ([6d3fb2f](https://github.com/newrelic/opensource-website/commit/6d3fb2ff01a739642defeb7110c629ef5d82491f))
+* updates to collections ([cf93dad](https://github.com/newrelic/opensource-website/commit/cf93dad22609c89f9c7cf3138d740a410c1aac9f))
+
+
+### Features
+
+* add collections landing page ([38c315b](https://github.com/newrelic/opensource-website/commit/38c315b1168792725ee001d348af7be2a57d5814))
+* add highlighted projects into top nav ([b6b4c08](https://github.com/newrelic/opensource-website/commit/b6b4c08d5230e3d066f7aa5d8b94dbe99a4dd329))
+* add in markup + styles for home collections ([2bdf7ef](https://github.com/newrelic/opensource-website/commit/2bdf7ef4f8c55a84f27df1feb26c2aff80f20613))
+* finish responsive styling homepage updates ([a357c12](https://github.com/newrelic/opensource-website/commit/a357c12bf5f01b0fe7296f13637a6712c4aa2ed2))
+* responsive styles for homepage collections ([930a059](https://github.com/newrelic/opensource-website/commit/930a0596107618730ab4452ff1cd5dff43a5000e))
+* update homepage to fit new design ([0d09907](https://github.com/newrelic/opensource-website/commit/0d09907b5af6ab2ad0e84f47e1cf6c9ffe0ea411))
+
+## [1.6.1](https://github.com/newrelic/opensource-website/compare/v1.6.0...v1.6.1) (2020-07-30)
+
+
+### Bug Fixes
+
+* exclude bots from contributor list ([f1c7c81](https://github.com/newrelic/opensource-website/commit/f1c7c815bc10034a1fd76aafdc7bccacac0eded1))
+
+# [1.6.0](https://github.com/newrelic/opensource-website/compare/v1.5.1...v1.6.0) (2020-07-30)
+
+
+### Bug Fixes
+
+* correct header for archived ([35aac22](https://github.com/newrelic/opensource-website/commit/35aac2286500d2d49200e1cd32c452ac514a6c2f))
+* update/clarify support policy details ([0b24e90](https://github.com/newrelic/opensource-website/commit/0b24e90ead95c3fe4ea06755946fd112bee76c06))
+
+
+### Features
+
+* add instrumentation landing page ([d1b7802](https://github.com/newrelic/opensource-website/commit/d1b7802069349dcbf85aea94b85cc3d060496c0a))
+
 ## [1.5.1](https://github.com/newrelic/opensource-website/compare/v1.5.0...v1.5.1) (2020-07-22)
 
 

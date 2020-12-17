@@ -1,22 +1,36 @@
 {
   "projectFullName": "newrelic/nri-ecs",
   "issues": {
-    "open": 0
+    "open": 4
   },
-  "releases": 1,
+  "releases": 3,
   "latestRelease": {
-    "name": "v1.0.1",
-    "date": "2020-07-21T13:57:55Z"
+    "name": "v1.1.1",
+    "date": "2020-11-27T15:21:02Z"
   },
-  "commits": 5,
-  "lastSixMonthsCommitTotal": 5,
-  "contributors": 3,
+  "commits": 15,
+  "lastSixMonthsCommitTotal": 15,
+  "contributors": 7,
   "pullRequests": {
     "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
+    {
+      "id": 43335750,
+      "login": "paologallinaharbur",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/43335750?v=4",
+      "htmlUrl": "https://github.com/paologallinaharbur",
+      "contributions": 1
+    },
     {
       "id": 59606623,
       "login": "mfuentes-newrelic",
@@ -32,11 +46,25 @@
       "contributions": 1
     },
     {
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
+      "contributions": 1
+    },
+    {
+      "id": 969721,
+      "login": "roobre",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/969721?v=4",
+      "htmlUrl": "https://github.com/roobre",
+      "contributions": 2
+    },
+    {
       "id": 5297542,
       "login": "alejandrodnm",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/5297542?v=4",
       "htmlUrl": "https://github.com/alejandrodnm",
-      "contributions": 2
+      "contributions": 3
     }
   ],
   "languages": [
@@ -59,6 +87,11 @@
       "id": "MDg6TGFuZ3VhZ2UxMzk=",
       "name": "Shell",
       "color": "#89e051"
+    },
+    {
+      "id": "MDg6TGFuZ3VhZ2U0Nzk=",
+      "name": "HCL",
+      "color": null
     }
   ],
   "screenshots": [],

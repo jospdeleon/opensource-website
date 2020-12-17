@@ -8,6 +8,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HomePageHighlights from '../components/HomePageHighlights';
 import HomePageInternalProjects from '../components/HomePageInternalProjects';
+import HomepageCollection from '../components/HomepageCollection';
 import styles from './home-page.module.scss';
 
 import videoPlaceholder from '../images/video-placeholder-1.jpg';
@@ -16,8 +17,22 @@ import closeIcon from '../images/icon-close.svg';
 
 export const query = graphql`
   query HomePageQuery($path: String) {
-    topProjects: allProjects(
-      filter: { projectType: { eq: "newrelic" } } # sort: { fields: stats___lastSixMonthsCommitTotal, order: DESC } # limit: 8
+    topProjects: allProjects(filter: { projectType: { eq: "newrelic" } }) {
+      edges {
+        node {
+          ...projectFields
+        }
+      }
+    }
+    instrumentation: allProjects(
+      filter: {
+        projectType: { eq: "newrelic" }
+        projectTags: {
+          elemMatch: {
+            slug: { in: ["exporter", "nri", "agent", "sdk", "cli"] }
+          }
+        }
+      }
     ) {
       edges {
         node {
@@ -57,9 +72,6 @@ export const query = graphql`
     }
     sitePage: allSitePage(filter: { path: { eq: $path } }) {
       nodes {
-        fields {
-          contentEditLink
-        }
         componentPath
         path
       }
@@ -67,31 +79,38 @@ export const query = graphql`
   }
 `;
 
-const HomePage = ({ data }) => {
+function sortByStats(a, b) {
+  if (a.stats === null && b.stats === null) {
+    return 0;
+  } else if (a.stats === null) {
+    return 1;
+  } else if (b.stats === null) {
+    return -1;
+  }
+
+  return a.stats.lastSixMonthsCommitTotal < b.stats.lastSixMonthsCommitTotal
+    ? 1
+    : -1;
+}
+
+const HomePage = ({ data, pageContext }) => {
   const [heroVideoActive, setHeroVideoActive] = useState(false);
+
+  const instrumentationProjects = get(data, 'instrumentation.edges', [])
+    .map((i) => i.node)
+    .sort(sortByStats)
+    .slice(0, 5);
 
   const externalProjects = [
     get(data, 'openTelemetry.nodes[0]'),
     get(data, 'w3cDistributedTracingWg.nodes[0]'),
-    get(data, 'adoptOpenJdk.nodes[0]')
-  ].filter(i => i !== undefined);
+    get(data, 'adoptOpenJdk.nodes[0]'),
+  ].filter((i) => i !== undefined);
 
   // temp workaround until the query above is fixed to pull back the correct top 8
   const internalProjects = get(data, 'topProjects.edges', [])
-    .map(i => i.node)
-    .sort((a, b) => {
-      if (a.stats === null && b.stats === null) {
-        return 0;
-      } else if (a.stats === null) {
-        return 1;
-      } else if (b.stats === null) {
-        return -1;
-      }
-
-      return a.stats.lastSixMonthsCommitTotal < b.stats.lastSixMonthsCommitTotal
-        ? 1
-        : -1;
-    })
+    .map((i) => i.node)
+    .sort(sortByStats)
     .slice(0, 8);
 
   const renderHeroVideo = () => {
@@ -145,10 +164,7 @@ const HomePage = ({ data }) => {
   };
 
   return (
-    <Layout
-      fullWidth
-      editLink={get(data, 'sitePage.nodes[0].fields.contentEditLink')}
-    >
+    <Layout fullWidth editLink={pageContext.fileRelativePath}>
       <Helmet>
         <html className={heroVideoActive && styles.heroVideoActive} />
       </Helmet>
@@ -196,6 +212,8 @@ const HomePage = ({ data }) => {
         }}
       />
 
+      <HomepageCollection projects={instrumentationProjects} />
+
       <HomePageHighlights data={externalProjects} />
 
       <div className={styles.featuredInternalProjectsContainer}>
@@ -216,7 +234,8 @@ const HomePage = ({ data }) => {
 };
 
 HomePage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 export default HomePage;

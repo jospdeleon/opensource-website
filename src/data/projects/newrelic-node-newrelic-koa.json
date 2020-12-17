@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Node.js Agent instumentation for Koa",
   "description": "Koa framework instrumentation for New Relic's Node.js Agent",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "JavaScript",
   "projectTags": [
     "agent",

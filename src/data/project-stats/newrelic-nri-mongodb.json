@@ -8,11 +8,11 @@
     "name": "v2.5.0",
     "date": "2020-02-24T15:35:50Z"
   },
-  "commits": 255,
-  "lastSixMonthsCommitTotal": 8,
-  "contributors": 14,
+  "commits": 262,
+  "lastSixMonthsCommitTotal": 12,
+  "contributors": 12,
   "pullRequests": {
-    "open": 0
+    "open": 2
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -60,13 +60,6 @@
       "contributions": 1
     },
     {
-      "id": 2054195,
-      "login": "ardias",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
-      "htmlUrl": "https://github.com/ardias",
-      "contributions": 1
-    },
-    {
       "id": 13438133,
       "login": "matiasburni",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/13438133?v=4",
@@ -88,13 +81,6 @@
       "contributions": 2
     },
     {
-      "id": 1773616,
-      "login": "theletterf",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
-      "htmlUrl": "https://github.com/theletterf",
-      "contributions": 3
-    },
-    {
       "id": 7886905,
       "login": "fryckbos",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/7886905?v=4",
@@ -113,7 +99,7 @@
       "login": "camdencheek",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/12631702?v=4",
       "htmlUrl": "https://github.com/camdencheek",
-      "contributions": 75
+      "contributions": 160
     }
   ],
   "languages": [

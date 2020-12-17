@@ -8,11 +8,11 @@
     "name": "v1.0.6",
     "date": null
   },
-  "commits": 65,
+  "commits": 67,
   "lastSixMonthsCommitTotal": 5,
   "contributors": 8,
   "pullRequests": {
-    "open": 1
+    "open": 2
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -43,7 +43,7 @@
       "login": "Noly",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/4612272?v=4",
       "htmlUrl": "https://github.com/Noly",
-      "contributions": 1
+      "contributions": 2
     },
     {
       "id": 30615,
@@ -83,11 +83,11 @@
   ],
   "screenshots": [],
   "license": {
-    "id": "MDc6TGljZW5zZTEz",
-    "name": "MIT License",
-    "spdxId": "MIT",
-    "url": "http://choosealicense.com/licenses/mit/",
+    "id": "MDc6TGljZW5zZTI=",
+    "name": "Apache License 2.0",
+    "spdxId": "Apache-2.0",
+    "url": "http://choosealicense.com/licenses/apache-2.0/",
     "featured": true,
-    "key": "mit"
+    "key": "apache-2.0"
   }
 }

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring data from Nagios",
   "description": "Capture critical performance metrics and inventory reported by Nagios",
-  "ossCategory": "new-relic-experimental",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for the VMware vSphere",
   "description": "Captures critical summary metrics and inventory data by connecting to the vCenter or to an ESXi Host",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

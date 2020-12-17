@@ -1,4 +1,5 @@
 import { Link } from 'gatsby';
+import { css } from '@emotion/core';
 import React, { useState } from 'react';
 import navLinks from '../data/navigation.json';
 import PropTypes from 'prop-types';
@@ -6,11 +7,11 @@ import { Helmet } from 'react-helmet';
 import { ChevronRight } from 'react-feather';
 import DarkModeToggle from './DarkModeToggle';
 
-import GlobalHeader from './GlobalHeader';
+import { GlobalHeader, Logo } from '@newrelic/gatsby-theme-newrelic';
 
 import styles from './Header.module.scss';
 
-const Header = ({ hasHeaderBg, editLink }) => {
+const Header = ({ hasHeaderBg }) => {
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
 
   const renderNavLinks = () => {
@@ -18,7 +19,7 @@ const Header = ({ hasHeaderBg, editLink }) => {
       a.order > b.order ? 1 : -1
     );
 
-    return sortedNavLinks.map(navItem => {
+    return sortedNavLinks.map((navItem) => {
       return (
         <li className={styles.primaryHeaderNavLinkItem} key={navItem.order}>
           <Link to={navItem.link} className={styles.primaryHeaderNavLink}>
@@ -39,18 +40,39 @@ const Header = ({ hasHeaderBg, editLink }) => {
         />
       </Helmet>
       <GlobalHeader
-        hasHeaderBg={hasHeaderBg}
         className={mobileMenuActive ? styles.existsInActiveMobileMenu : ''}
-        editLink={editLink}
+        css={css`
+          ul {
+            line-height: 14px;
+            font-size: 16px;
+          }
+
+          a {
+            border-bottom: none;
+          }
+
+          z-index: 700;
+        `}
       />
       <header
         className={`${styles.primaryHeaderContainer} ${
           hasHeaderBg ? styles.hasHeaderBg : ''
         } ${mobileMenuActive ? styles.parentOfActiveMobileMenu : ''}`}
       >
-        <a href="/" className={styles.primaryHeaderLogo}>
-          New Relic Open Source
-        </a>
+        <Link
+          to="/"
+          css={css`
+            display: block;
+            width: 257px;
+
+            @media screen and (max-width: 724px) {
+              width: 160px;
+              z-index: 500;
+            }
+          `}
+        >
+          <Logo width="100%" />
+        </Link>
 
         <ul className={styles.primaryHeaderNavLinks}>{renderNavLinks()}</ul>
 
@@ -78,7 +100,6 @@ const Header = ({ hasHeaderBg, editLink }) => {
 
 Header.propTypes = {
   hasHeaderBg: PropTypes.bool,
-  editLink: PropTypes.string
 };
 
 export default Header;

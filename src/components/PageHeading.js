@@ -9,7 +9,7 @@ import placeholderProjectIconLight from '../images/page-heading-icon-placeholder
 import styles from './PageHeading.module.scss';
 import withDarkMode from './withDarkMode';
 
-const PageHeading = props => {
+const PageHeading = (props) => {
   const { darkMode, project } = props;
 
   const renderTags = () => {
@@ -69,7 +69,7 @@ const PageHeading = props => {
         !hasIcon && props.hasSeparator ? styles.hasSeparatorWithoutIcon : ''
       } ${props.icon ? styles.hasIcon : ''} ${
         props.callToAction ? styles.hasCallToAction : ''
-      }`}
+      } ${props.className ? props.className : ''}`}
     >
       {hasIcon && props.showIcon && (
         <div className={styles.pageHeadingIconContainer}>
@@ -99,7 +99,7 @@ const PageHeading = props => {
 };
 
 PageHeading.defaultProps = {
-  showIcon: false
+  showIcon: false,
 };
 
 PageHeading.propTypes = {
@@ -112,7 +112,8 @@ PageHeading.propTypes = {
   hasSeparator: PropTypes.bool,
   blogMeta: PropTypes.string,
   callToAction: PropTypes.func,
-  darkMode: PropTypes.object
+  darkMode: PropTypes.object,
+  className: PropTypes.string,
 };
 
 export default withDarkMode(PageHeading);

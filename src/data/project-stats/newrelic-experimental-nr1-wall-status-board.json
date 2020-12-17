@@ -3,16 +3,16 @@
   "issues": {
     "open": 1
   },
-  "releases": 1,
+  "releases": 3,
   "latestRelease": {
-    "name": "v1.0.0",
-    "date": "2020-06-08T18:46:23Z"
+    "name": "v1.1.1",
+    "date": "2020-11-27T09:24:39Z"
   },
-  "commits": 43,
-  "lastSixMonthsCommitTotal": 43,
-  "contributors": 7,
+  "commits": 61,
+  "lastSixMonthsCommitTotal": 21,
+  "contributors": 8,
   "pullRequests": {
-    "open": 2
+    "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -25,10 +25,10 @@
       "contributions": 1
     },
     {
-      "id": 32174276,
-      "login": "semantic-release-bot",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/32174276?v=4",
-      "htmlUrl": "https://github.com/semantic-release-bot",
+      "id": 43244625,
+      "login": "melissaklein24",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/43244625?v=4",
+      "htmlUrl": "https://github.com/melissaklein24",
       "contributions": 1
     },
     {
@@ -39,10 +39,10 @@
       "contributions": 1
     },
     {
-      "id": 66321197,
-      "login": "nr-opensource-bot",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/66321197?v=4",
-      "htmlUrl": "https://github.com/nr-opensource-bot",
+      "id": 32174276,
+      "login": "semantic-release-bot",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/32174276?v=4",
+      "htmlUrl": "https://github.com/semantic-release-bot",
       "contributions": 3
     },
     {
@@ -51,6 +51,13 @@
       "avatarUrl": "https://avatars3.githubusercontent.com/u/6722433?v=4",
       "htmlUrl": "https://github.com/jbeveland27",
       "contributions": 3
+    },
+    {
+      "id": 66321197,
+      "login": "nr-opensource-bot",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/66321197?v=4",
+      "htmlUrl": "https://github.com/nr-opensource-bot",
+      "contributions": 8
     },
     {
       "id": 10984551,
@@ -64,7 +71,7 @@
       "login": "jsbnr",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/55132258?v=4",
       "htmlUrl": "https://github.com/jsbnr",
-      "contributions": 18
+      "contributions": 23
     }
   ],
   "languages": [
@@ -74,9 +81,9 @@
       "color": "#f1e05a"
     },
     {
-      "id": "MDg6TGFuZ3VhZ2UzMDg=",
-      "name": "CSS",
-      "color": "#563d7c"
+      "id": "MDg6TGFuZ3VhZ2U2MDU=",
+      "name": "SCSS",
+      "color": "#c6538c"
     }
   ],
   "screenshots": [],

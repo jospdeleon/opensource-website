@@ -1,27 +1,27 @@
 {
   "projectFullName": "newrelic/newrelic-lambda-cli",
   "issues": {
-    "open": 4
+    "open": 3
   },
-  "releases": 31,
+  "releases": 48,
   "latestRelease": {
-    "name": "v0.2.4",
-    "date": "2020-05-15T21:16:14Z"
+    "name": "v0.4.11",
+    "date": "2020-12-16T22:05:15Z"
   },
-  "commits": 302,
-  "lastSixMonthsCommitTotal": 45,
-  "contributors": 13,
+  "commits": 344,
+  "lastSixMonthsCommitTotal": 42,
+  "contributors": 14,
   "pullRequests": {
-    "open": 1
+    "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
     {
-      "id": 61292402,
-      "login": "keegoid-nr",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/61292402?v=4",
-      "htmlUrl": "https://github.com/keegoid-nr",
+      "id": 43244625,
+      "login": "melissaklein24",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/43244625?v=4",
+      "htmlUrl": "https://github.com/melissaklein24",
       "contributions": 1
     },
     {
@@ -32,10 +32,10 @@
       "contributions": 1
     },
     {
-      "id": 11327,
-      "login": "mrickard",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/11327?v=4",
-      "htmlUrl": "https://github.com/mrickard",
+      "id": 61292402,
+      "login": "keegoid-nr",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/61292402?v=4",
+      "htmlUrl": "https://github.com/keegoid-nr",
       "contributions": 2
     },
     {
@@ -74,6 +74,13 @@
       "contributions": 4
     },
     {
+      "id": 11327,
+      "login": "mrickard",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/11327?v=4",
+      "htmlUrl": "https://github.com/mrickard",
+      "contributions": 5
+    },
+    {
       "id": 3925334,
       "login": "salvatorious",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/3925334?v=4",
@@ -85,13 +92,13 @@
       "login": "MattWhelan",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/585473?v=4",
       "htmlUrl": "https://github.com/MattWhelan",
-      "contributions": 18
+      "contributions": 27
     },
     {
-      "id": 2054195,
-      "login": "ardias",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
-      "htmlUrl": "https://github.com/ardias",
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
       "contributions": 32
     },
     {
@@ -106,7 +113,7 @@
       "login": "kolanos",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/17498?v=4",
       "htmlUrl": "https://github.com/kolanos",
-      "contributions": 100
+      "contributions": 121
     }
   ],
   "languages": [

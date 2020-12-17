@@ -1,22 +1,29 @@
 {
   "projectFullName": "newrelic/infrastructure-bundle",
   "issues": {
-    "open": 0
+    "open": 1
   },
-  "releases": 18,
+  "releases": 23,
   "latestRelease": {
-    "name": "1.4.1",
-    "date": "2020-07-27T16:51:41Z"
+    "name": "2.0.0",
+    "date": "2020-12-04T13:39:25Z"
   },
-  "commits": 66,
-  "lastSixMonthsCommitTotal": 66,
-  "contributors": 6,
+  "commits": 94,
+  "lastSixMonthsCommitTotal": 33,
+  "contributors": 9,
   "pullRequests": {
     "open": 0
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
     {
       "id": 7886905,
       "login": "fryckbos",
@@ -25,10 +32,10 @@
       "contributions": 1
     },
     {
-      "id": 4612272,
-      "login": "Noly",
-      "avatarUrl": "https://avatars1.githubusercontent.com/u/4612272?v=4",
-      "htmlUrl": "https://github.com/Noly",
+      "id": 73652669,
+      "login": "arvdias",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/73652669?v=4",
+      "htmlUrl": "https://github.com/arvdias",
       "contributions": 1
     },
     {
@@ -36,6 +43,20 @@
       "login": "ardias",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
       "htmlUrl": "https://github.com/ardias",
+      "contributions": 1
+    },
+    {
+      "id": 5143130,
+      "login": "gsanchezgavier",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/5143130?v=4",
+      "htmlUrl": "https://github.com/gsanchezgavier",
+      "contributions": 2
+    },
+    {
+      "id": 4612272,
+      "login": "Noly",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/4612272?v=4",
+      "htmlUrl": "https://github.com/Noly",
       "contributions": 2
     },
     {
@@ -43,7 +64,7 @@
       "login": "alejandrodnm",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/5297542?v=4",
       "htmlUrl": "https://github.com/alejandrodnm",
-      "contributions": 4
+      "contributions": 5
     },
     {
       "id": 1300852,
@@ -57,7 +78,7 @@
       "login": "carlosroman",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/717815?v=4",
       "htmlUrl": "https://github.com/carlosroman",
-      "contributions": 22
+      "contributions": 36
     }
   ],
   "languages": [

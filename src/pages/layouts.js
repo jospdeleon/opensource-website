@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import { get } from 'lodash';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageHeading from '../components/PageHeading';
@@ -20,9 +19,6 @@ export const query = graphql`
     }
     sitePage: allSitePage(filter: { path: { eq: $path } }) {
       nodes {
-        fields {
-          contentEditLink
-        }
         componentPath
         path
       }
@@ -30,9 +26,9 @@ export const query = graphql`
   }
 `;
 
-const LayoutsPage = ({ data }) => {
+const LayoutsPage = ({ data, pageContext }) => {
   // console.debug(data);
-  const allProjects = data.allProjects.edges.map(p => {
+  const allProjects = data.allProjects.edges.map((p) => {
     const project = p.node;
     project.title = project.title.startsWith('New Relic One Nerdpack Layout')
       ? `${project.title.substring(
@@ -46,7 +42,7 @@ const LayoutsPage = ({ data }) => {
     <Layout
       fullWidth
       className={styles.collectionPage}
-      editLink={get(data, 'sitePage.nodes[0].fields.contentEditLink')}
+      editLink={pageContext.fileRelativePath}
     >
       <SEO title="Open source New Relic One applications" />
       <PageHeading
@@ -93,7 +89,7 @@ const LayoutsPage = ({ data }) => {
           </p>
         </header>
         <div className={styles.collectionListing}>
-          {allProjects.map(project => {
+          {allProjects.map((project) => {
             return (
               <SimpleProjectModule
                 key={project.id}
@@ -109,7 +105,8 @@ const LayoutsPage = ({ data }) => {
 };
 
 LayoutsPage.propTypes = {
-  data: PropTypes.object
+  data: PropTypes.object,
+  pageContext: PropTypes.object,
 };
 
 export default LayoutsPage;

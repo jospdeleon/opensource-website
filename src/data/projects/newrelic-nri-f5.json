@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for F5 BIG-IP",
   "description": "New Relic Infrastructure Integration for F5 BIG-IP",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

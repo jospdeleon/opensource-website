@@ -1,16 +1,16 @@
 {
   "projectFullName": "newrelic/nri-mysql",
   "issues": {
-    "open": 1
+    "open": 7
   },
   "releases": 10,
   "latestRelease": {
     "name": "v1.4.0",
     "date": "2019-11-22T10:48:37Z"
   },
-  "commits": 130,
-  "lastSixMonthsCommitTotal": 2,
-  "contributors": 11,
+  "commits": 141,
+  "lastSixMonthsCommitTotal": 13,
+  "contributors": 12,
   "pullRequests": {
     "open": 1
   },
@@ -18,10 +18,17 @@
   "cachedIssues": [],
   "cachedContributors": [
     {
-      "id": 1773616,
-      "login": "theletterf",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
-      "htmlUrl": "https://github.com/theletterf",
+      "id": 929261,
+      "login": "tangollama",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/929261?v=4",
+      "htmlUrl": "https://github.com/tangollama",
+      "contributions": 1
+    },
+    {
+      "id": 43335750,
+      "login": "paologallinaharbur",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/43335750?v=4",
+      "htmlUrl": "https://github.com/paologallinaharbur",
       "contributions": 1
     },
     {
@@ -46,6 +53,13 @@
       "contributions": 2
     },
     {
+      "id": 2054195,
+      "login": "ardias",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
+      "htmlUrl": "https://github.com/ardias",
+      "contributions": 2
+    },
+    {
       "id": 39911991,
       "login": "davidbrota",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/39911991?v=4",
@@ -57,13 +71,6 @@
       "login": "cristianciutea",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/15685307?v=4",
       "htmlUrl": "https://github.com/cristianciutea",
-      "contributions": 3
-    },
-    {
-      "id": 2054195,
-      "login": "ardias",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/2054195?v=4",
-      "htmlUrl": "https://github.com/ardias",
       "contributions": 3
     },
     {

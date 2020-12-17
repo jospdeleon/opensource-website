@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/nr1-account-maturity",
   "issues": {
-    "open": 6
+    "open": 7
   },
-  "releases": 4,
+  "releases": 9,
   "latestRelease": {
-    "name": "v0.5.3",
-    "date": "2020-06-15T19:18:42Z"
+    "name": "v0.6.2",
+    "date": "2020-11-17T15:58:51Z"
   },
-  "commits": 38,
-  "lastSixMonthsCommitTotal": 38,
-  "contributors": 8,
+  "commits": 82,
+  "lastSixMonthsCommitTotal": 43,
+  "contributors": 9,
   "pullRequests": {
-    "open": 1
+    "open": 4
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -22,6 +22,13 @@
       "login": "theletterf",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/1773616?v=4",
       "htmlUrl": "https://github.com/theletterf",
+      "contributions": 1
+    },
+    {
+      "id": 8731013,
+      "login": "prototypicalpro",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/8731013?v=4",
+      "htmlUrl": "https://github.com/prototypicalpro",
       "contributions": 1
     },
     {
@@ -36,20 +43,6 @@
       "login": "jospdeleon",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/23487424?v=4",
       "htmlUrl": "https://github.com/jospdeleon",
-      "contributions": 1
-    },
-    {
-      "id": 19733683,
-      "login": "snyk-bot",
-      "avatarUrl": "https://avatars2.githubusercontent.com/u/19733683?v=4",
-      "htmlUrl": "https://github.com/snyk-bot",
-      "contributions": 2
-    },
-    {
-      "id": 66321197,
-      "login": "nr-opensource-bot",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/66321197?v=4",
-      "htmlUrl": "https://github.com/nr-opensource-bot",
       "contributions": 3
     },
     {
@@ -60,18 +53,32 @@
       "contributions": 4
     },
     {
+      "id": 19733683,
+      "login": "snyk-bot",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/19733683?v=4",
+      "htmlUrl": "https://github.com/snyk-bot",
+      "contributions": 6
+    },
+    {
       "id": 32174276,
       "login": "semantic-release-bot",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/32174276?v=4",
       "htmlUrl": "https://github.com/semantic-release-bot",
-      "contributions": 5
+      "contributions": 9
     },
     {
       "id": 6722433,
       "login": "jbeveland27",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/6722433?v=4",
       "htmlUrl": "https://github.com/jbeveland27",
-      "contributions": 9
+      "contributions": 12
+    },
+    {
+      "id": 66321197,
+      "login": "nr-opensource-bot",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/66321197?v=4",
+      "htmlUrl": "https://github.com/nr-opensource-bot",
+      "contributions": 14
     }
   ],
   "languages": [
@@ -81,9 +88,9 @@
       "color": "#f1e05a"
     },
     {
-      "id": "MDg6TGFuZ3VhZ2UzMDg=",
-      "name": "CSS",
-      "color": "#563d7c"
+      "id": "MDg6TGFuZ3VhZ2U2MDU=",
+      "name": "SCSS",
+      "color": "#c6538c"
     }
   ],
   "screenshots": [

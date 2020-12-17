@@ -3,13 +3,13 @@
   "issues": {
     "open": 3
   },
-  "releases": 8,
+  "releases": 13,
   "latestRelease": {
-    "name": "0.1.7",
-    "date": "2019-10-24T21:15:37Z"
+    "name": "0.2.1",
+    "date": "2020-10-22T20:59:21Z"
   },
-  "commits": 80,
-  "lastSixMonthsCommitTotal": 4,
+  "commits": 92,
+  "lastSixMonthsCommitTotal": 14,
   "contributors": 8,
   "pullRequests": {
     "open": 0
@@ -17,6 +17,13 @@
   "searchCategory": "good first issue",
   "cachedIssues": [],
   "cachedContributors": [
+    {
+      "id": 54076100,
+      "login": "sdewitt-newrelic",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/54076100?v=4",
+      "htmlUrl": "https://github.com/sdewitt-newrelic",
+      "contributions": 1
+    },
     {
       "id": 45947764,
       "login": "bpeckNR",
@@ -29,13 +36,6 @@
       "login": "Steve24by7",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/14909998?v=4",
       "htmlUrl": "https://github.com/Steve24by7",
-      "contributions": 1
-    },
-    {
-      "id": 13507905,
-      "login": "AnthonyBloomer",
-      "avatarUrl": "https://avatars0.githubusercontent.com/u/13507905?v=4",
-      "htmlUrl": "https://github.com/AnthonyBloomer",
       "contributions": 1
     },
     {
@@ -71,7 +71,7 @@
       "login": "sschwartzman",
       "avatarUrl": "https://avatars3.githubusercontent.com/u/3536684?v=4",
       "htmlUrl": "https://github.com/sschwartzman",
-      "contributions": 42
+      "contributions": 52
     }
   ],
   "languages": [

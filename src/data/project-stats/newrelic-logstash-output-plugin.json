@@ -1,15 +1,15 @@
 {
   "projectFullName": "newrelic/logstash-output-plugin",
   "issues": {
-    "open": 0
+    "open": 2
   },
   "releases": 0,
   "latestRelease": null,
-  "commits": 10,
-  "lastSixMonthsCommitTotal": 0,
-  "contributors": 2,
+  "commits": 17,
+  "lastSixMonthsCommitTotal": 7,
+  "contributors": 4,
   "pullRequests": {
-    "open": 0
+    "open": 1
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -27,6 +27,20 @@
       "avatarUrl": "https://avatars2.githubusercontent.com/u/2571329?v=4",
       "htmlUrl": "https://github.com/ngotim",
       "contributions": 2
+    },
+    {
+      "id": 43244625,
+      "login": "melissaklein24",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/43244625?v=4",
+      "htmlUrl": "https://github.com/melissaklein24",
+      "contributions": 2
+    },
+    {
+      "id": 6243832,
+      "login": "jsubirat",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/6243832?v=4",
+      "htmlUrl": "https://github.com/jsubirat",
+      "contributions": 3
     }
   ],
   "languages": [

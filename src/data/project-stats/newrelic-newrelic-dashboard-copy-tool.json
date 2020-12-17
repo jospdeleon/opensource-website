@@ -1,12 +1,12 @@
 {
   "projectFullName": "newrelic/newrelic-dashboard-copy-tool",
   "issues": {
-    "open": 0
+    "open": 2
   },
   "releases": 0,
   "latestRelease": null,
-  "commits": 22,
-  "lastSixMonthsCommitTotal": 22,
+  "commits": 24,
+  "lastSixMonthsCommitTotal": 6,
   "contributors": 3,
   "pullRequests": {
     "open": 0
@@ -33,7 +33,7 @@
       "login": "sophos7",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/5223786?v=4",
       "htmlUrl": "https://github.com/sophos7",
-      "contributions": 16
+      "contributions": 17
     }
   ],
   "languages": [

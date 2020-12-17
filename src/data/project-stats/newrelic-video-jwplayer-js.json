@@ -3,12 +3,12 @@
   "issues": {
     "open": 0
   },
-  "releases": 6,
+  "releases": 13,
   "latestRelease": {
-    "name": "v0.4.0",
+    "name": "v0.11.0",
     "date": null
   },
-  "commits": 50,
+  "commits": 72,
   "lastSixMonthsCommitTotal": 22,
   "contributors": 3,
   "pullRequests": {
@@ -25,18 +25,18 @@
       "contributions": 9
     },
     {
-      "id": 6130000,
-      "login": "asllop",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/6130000?v=4",
-      "htmlUrl": "https://github.com/asllop",
-      "contributions": 13
-    },
-    {
       "id": 14294477,
       "login": "jaguilar87",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/14294477?v=4",
       "htmlUrl": "https://github.com/jaguilar87",
       "contributions": 28
+    },
+    {
+      "id": 6130000,
+      "login": "asllop",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/6130000?v=4",
+      "htmlUrl": "https://github.com/asllop",
+      "contributions": 35
     }
   ],
   "languages": [

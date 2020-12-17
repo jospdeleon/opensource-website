@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/elixir_agent",
   "issues": {
-    "open": 5
+    "open": 7
   },
-  "releases": 71,
+  "releases": 82,
   "latestRelease": {
-    "name": "v1.19.4",
-    "date": "2020-07-28T20:41:46Z"
+    "name": "v1.22.3",
+    "date": "2020-12-14T22:34:28Z"
   },
-  "commits": 536,
-  "lastSixMonthsCommitTotal": 169,
-  "contributors": 13,
+  "commits": 594,
+  "lastSixMonthsCommitTotal": 77,
+  "contributors": 16,
   "pullRequests": {
-    "open": 4
+    "open": 6
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -39,6 +39,20 @@
       "contributions": 1
     },
     {
+      "id": 1330045,
+      "login": "mopp",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/1330045?v=4",
+      "htmlUrl": "https://github.com/mopp",
+      "contributions": 1
+    },
+    {
+      "id": 5142805,
+      "login": "mirjoy",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/5142805?v=4",
+      "htmlUrl": "https://github.com/mirjoy",
+      "contributions": 1
+    },
+    {
       "id": 2415,
       "login": "jasondew",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/2415?v=4",
@@ -57,6 +71,13 @@
       "login": "emeryotopalik",
       "avatarUrl": "https://avatars0.githubusercontent.com/u/6687220?v=4",
       "htmlUrl": "https://github.com/emeryotopalik",
+      "contributions": 1
+    },
+    {
+      "id": 151912,
+      "login": "barthez",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/151912?v=4",
+      "htmlUrl": "https://github.com/barthez",
       "contributions": 1
     },
     {
@@ -106,7 +127,7 @@
       "login": "binaryseed",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/39946?v=4",
       "htmlUrl": "https://github.com/binaryseed",
-      "contributions": 377
+      "contributions": 416
     }
   ],
   "languages": [

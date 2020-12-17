@@ -13,7 +13,7 @@
   "iconUrl": null,
   "shortDescription": "Monitoring for Hashicorp Consul clusters",
   "description": "Capture critical performance metrics and inventory reported by Hashicorp Consul clusters",
-  "ossCategory": "community-project",
+  "ossCategory": "community-plus",
   "primaryLanguage": "Go",
   "projectTags": [
     "nri"

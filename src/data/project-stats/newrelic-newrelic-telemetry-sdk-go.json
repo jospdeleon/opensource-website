@@ -1,18 +1,18 @@
 {
   "projectFullName": "newrelic/newrelic-telemetry-sdk-go",
   "issues": {
-    "open": 1
+    "open": 9
   },
-  "releases": 3,
+  "releases": 6,
   "latestRelease": {
-    "name": "v0.3.0",
-    "date": "2020-06-12T23:04:45Z"
+    "name": "v0.5.1",
+    "date": "2020-12-17T01:45:17Z"
   },
-  "commits": 19,
-  "lastSixMonthsCommitTotal": 9,
-  "contributors": 4,
+  "commits": 54,
+  "lastSixMonthsCommitTotal": 35,
+  "contributors": 9,
   "pullRequests": {
-    "open": 1
+    "open": 4
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -25,17 +25,24 @@
       "contributions": 1
     },
     {
+      "id": 455419,
+      "login": "jthurman42",
+      "avatarUrl": "https://avatars1.githubusercontent.com/u/455419?v=4",
+      "htmlUrl": "https://github.com/jthurman42",
+      "contributions": 1
+    },
+    {
+      "id": 5143130,
+      "login": "gsanchezgavier",
+      "avatarUrl": "https://avatars2.githubusercontent.com/u/5143130?v=4",
+      "htmlUrl": "https://github.com/gsanchezgavier",
+      "contributions": 1
+    },
+    {
       "id": 9435570,
       "login": "zuluecho9",
       "avatarUrl": "https://avatars2.githubusercontent.com/u/9435570?v=4",
       "htmlUrl": "https://github.com/zuluecho9",
-      "contributions": 2
-    },
-    {
-      "id": 1383216,
-      "login": "purple4reina",
-      "avatarUrl": "https://avatars3.githubusercontent.com/u/1383216?v=4",
-      "htmlUrl": "https://github.com/purple4reina",
       "contributions": 2
     },
     {
@@ -44,6 +51,34 @@
       "avatarUrl": "https://avatars1.githubusercontent.com/u/10852?v=4",
       "htmlUrl": "https://github.com/areina",
       "contributions": 2
+    },
+    {
+      "id": 5543599,
+      "login": "MrAlias",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/5543599?v=4",
+      "htmlUrl": "https://github.com/MrAlias",
+      "contributions": 2
+    },
+    {
+      "id": 13123145,
+      "login": "RichVanderwal",
+      "avatarUrl": "https://avatars3.githubusercontent.com/u/13123145?v=4",
+      "htmlUrl": "https://github.com/RichVanderwal",
+      "contributions": 3
+    },
+    {
+      "id": 1462042,
+      "login": "rvanderwal-newrelic",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/1462042?v=4",
+      "htmlUrl": "https://github.com/rvanderwal-newrelic",
+      "contributions": 6
+    },
+    {
+      "id": 3170392,
+      "login": "justinfoote",
+      "avatarUrl": "https://avatars0.githubusercontent.com/u/3170392?v=4",
+      "htmlUrl": "https://github.com/justinfoote",
+      "contributions": 6
     }
   ],
   "languages": [

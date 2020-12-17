@@ -8,14 +8,16 @@ const HomePageHighlights = ({ data }) => {
   const projects = data;
   return (
     <div className={styles.featuredExternalProjects}>
-      <h4 className={styles.featuredExternalProjectsTitle}>
-        Projects that we support
-      </h4>
-      <p className={styles.featuredExternalProjectsDescription}>
-        New Relic contributes resources to the development of these projects.
-      </p>
+      <div className={styles.featuredExternalProjectsHeader}>
+        <h4 className={styles.featuredExternalProjectsTitle}>
+          Projects that we support
+        </h4>
+        <p className={styles.featuredExternalProjectsDescription}>
+          New Relic contributes resources to the development of these projects.
+        </p>
+      </div>
       <div className={styles.externalProjectsList}>
-        {projects.map(project => {
+        {projects.map((project) => {
           return <ProjectModule data={project} key={project.title} row />;
         })}
       </div>
@@ -24,7 +26,7 @@ const HomePageHighlights = ({ data }) => {
 };
 
 HomePageHighlights.propTypes = {
-  data: PropTypes.array
+  data: PropTypes.array,
 };
 
 export default HomePageHighlights;

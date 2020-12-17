@@ -3,16 +3,16 @@
   "issues": {
     "open": 2
   },
-  "releases": 2,
+  "releases": 3,
   "latestRelease": {
-    "name": "2.0.0",
-    "date": "2020-03-23T16:57:32Z"
+    "name": "v2.0.1",
+    "date": "2020-08-14T12:21:50Z"
   },
-  "commits": 12,
-  "lastSixMonthsCommitTotal": 12,
+  "commits": 16,
+  "lastSixMonthsCommitTotal": 8,
   "contributors": 2,
   "pullRequests": {
-    "open": 0
+    "open": 1
   },
   "searchCategory": "good first issue",
   "cachedIssues": [],
@@ -29,7 +29,7 @@
       "login": "peetk",
       "avatarUrl": "https://avatars1.githubusercontent.com/u/30607359?v=4",
       "htmlUrl": "https://github.com/peetk",
-      "contributions": 6
+      "contributions": 8
     }
   ],
   "languages": [

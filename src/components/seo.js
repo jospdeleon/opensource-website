@@ -30,49 +30,71 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang
+        lang,
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:title`,
-          content: title
+          content: title,
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`
+          content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`
+          content: `summary`,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author
+          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
-          content: title
+          content: title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           class: 'swiftype',
           name: 'type',
           'data-type': 'enum',
-          content: 'opensource'
-        }
+          content: 'opensource',
+        },
+        {
+          name: 'title',
+          class: 'swiftype',
+          'data-type': 'string',
+          content: title,
+        },
+        {
+          name: 'info',
+          class: 'swiftype',
+          'data-type': 'string',
+          content: description,
+        },
+        {
+          name: 'document_type',
+          class: 'swiftype',
+          'data-type': 'enum',
+          content: 'page',
+        },
+        {
+          name: 'google-site-verification',
+          content: 'He_vizRXYX_mUhwBe3BmyaMxNnVRAZbq_Jtm2A0e4WY',
+        },
       ].concat(meta)}
     />
   );
@@ -81,14 +103,14 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``
+  description: ``,
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default SEO;
